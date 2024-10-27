@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 214, 163);
+}
+
+.main {
+    width: 80vw;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", serif;
+    height: 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.home {
+    color: red;
+}
+
+.home:hover {
+    /* color: aliceblue; */
+    /* -webkit-text-stroke: 1px black; */
+    font-size: 30px;
+}
+
+.home2:hover {
+    color: red;
+    /* -webkit-text-stroke: 1px black; */
+    font-size: 30px;
+}
+
+.btn {
+    color: red;
+    border: 3px solid black;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+    background-color: red;
+    color: white;
+    border: 3px solid red;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", serif;
+}
+
+.coffee-text span {
+    font-size: 35px;
+    color: #ff6a00;
+    font-weight: 900;
+}
+
+.coffee-text h3 {
+    font-size: 30px;
+}
+
+.coffee-text p {
+    font-size: 18px;
+    margin: 30px 0px;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #fff;
+    color: red;
+    margin: 10px 0;
+    transition: all 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #fff;
+    color: red;
+}
+
+.primary-button {
+    background-color: #ff6a00;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.secondary-button:hover {
+    background-color: #ff6a00;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .main {
+        max-width: 90%;
+    }
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logo {
+        position: relative;
+        top: 40px;
+        right: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 5px;
+
+    }
+
+    nav ul li a {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
+
+    .image1 {
+        width: 80%;
+    }
+
+    .logo {
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        color: red;
+        border: 3px solid black;
+        padding: 6px 12px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in;
+        font-size: 10px;
+    }
+
+    .home:hover {
+        font-size: 12px;
+    }
+    
+    .home2:hover {
+        font-size: 12px;
+    }
+
+}
